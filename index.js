@@ -1,6 +1,6 @@
 const rootURL = "https://api.github.com"
 
-function getRepos() {
+function getRepositories() {
   const name = document.getElementById("username").value
   const uri = rootURL + "/users/" + name + "/repos"
   const xhr = new XMLHttpRequest()
