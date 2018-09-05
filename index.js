@@ -1,7 +1,6 @@
-const rootURL = "https://api.github.com"
 
 function getRepositories() {
-  const uri = rootURL + "/users/AhmadAbdulkhaliq/repos"
+  const uri = "https://api.github.com/users/AhmadAbdulkhaliq/repos"
   const xhr = new XMLHttpRequest()
   xhr.addEventListener("load", displayRepositories)
   xhr.open("GET", uri)
